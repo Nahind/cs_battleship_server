@@ -1,0 +1,15 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox fx:controller="gui.ServerController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="20">
+
+    <Button fx:id="start_server" text="Start server"
+            onAction="#handleSubmitButtonAction"/>
+
+    <Text text="Click on the button to start the Battleship server"
+           wrappingWidth="300" textAlignment="CENTER" fx:id="info"/>
+
+    <TextArea visible="true" fx:id="logContainer" wrapText="true"/>
+</VBox>
